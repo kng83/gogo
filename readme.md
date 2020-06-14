@@ -1,0 +1,1 @@
+//pocwicz errory bo cos ci nie ida
