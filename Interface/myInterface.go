@@ -72,6 +72,7 @@ func main() {
 	var myInt *MyInt           //deklaracja wskaznika
 	var second SecondInterface // tu dajemy interfejs
 	second = myInt             // tu przypisujemy myInt do second
+
 	//	second.AssignValue(10)
 	second.SecondMethod() //ta metoda bedzie miala nila
 }
