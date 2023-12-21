@@ -4,9 +4,8 @@ import (
 	"fmt"
 	"math"
 	"reflect"
+	"shapes"
 	"time"
-
-	shapes "./Shapes"
 )
 
 func sqrt(x float64) string {
@@ -90,7 +89,7 @@ func main() {
 
 }
 
-//Used to print table
+// Used to print table
 func printSlice(s []int, coment string) {
 	for i := 0; i < len(s); i++ {
 		fmt.Printf("%v ", s[i])
@@ -100,7 +99,7 @@ func printSlice(s []int, coment string) {
 	}
 }
 
-//Przyklad dwoch funkcji ktore razem wspolpracuja
+// Przyklad dwoch funkcji ktore razem wspolpracuja
 func comp(value int, fn func(int) int) int {
 	return fn(value)
 }
@@ -117,13 +116,13 @@ func adder() func() int {
 	}
 }
 
-//Wierzcholek Funkcja z metodami do struktury
+// Wierzcholek Funkcja z metodami do struktury
 type Wierzcholek struct {
 	X float64
 	Y float64
 }
 
-//Abs tutaj jest dodawanie metod do vertex
+// Abs tutaj jest dodawanie metod do vertex
 func (v Wierzcholek) Abs() float64 {
 	return math.Sqrt(v.X*v.X + v.Y*v.Y)
 }
